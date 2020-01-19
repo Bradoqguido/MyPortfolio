@@ -1,0 +1,8 @@
+.skillsContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.skillContent {
+  margin: 16px;
+}

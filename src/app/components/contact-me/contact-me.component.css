@@ -1,0 +1,8 @@
+.socialContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.socialContent {
+  margin: 16px;
+}

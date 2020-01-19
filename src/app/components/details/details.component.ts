@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
 
+  myImg = 'https://avatars1.githubusercontent.com/u/33663771?v=4';
+  myName = 'Jeferson Eduardo Guido';
+
   constructor() { }
 
   ngOnInit() {

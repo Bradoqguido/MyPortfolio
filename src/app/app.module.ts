@@ -2,21 +2,31 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+// Material imports
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { ReposListComponent } from './modules/repos-list/repos-list.component';
-import { DetailsComponent } from './modules/details/details.component';
-import { GridDetailsComponent } from './modules/grid-details/grid-details.component';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
+// Components
+import { AppComponent } from './app.component';
+import { DetailsComponent } from './components/details/details.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { MoreDetailsComponent } from './components/more-details/more-details.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReposListComponent,
     DetailsComponent,
-    GridDetailsComponent
+    MoreDetailsComponent,
+    ProjectsComponent,
+    SkillsComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +34,9 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MatCardModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+mat-card {
+  margin: 3%;
+}

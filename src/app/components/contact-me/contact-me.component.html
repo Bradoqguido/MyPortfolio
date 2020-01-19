@@ -1,0 +1,24 @@
+<div style="text-align: center">
+  <h3>Contact me</h3>
+  <div class="socialContainer" *ngFor="let media of socialmedia">
+
+    <!-- For all another social links -->
+    <div class="socialContent" *ngIf="media.name !== 'Email'">
+      <div>
+        <a mat-flat-button href="{{media.url}}" target="_blank">
+          <img [src]="media.imgURL">
+        </a>
+      </div>
+      <a mat-flat-button href="{{media.url}}" target="_blank">{{media.name}}</a>
+    </div>
+
+    <!-- For emails -->
+    <div class="socialContent" *ngIf="media.name === 'Email'">
+      <div>
+        <img [src]="media.imgURL">
+      </div>
+      <p>{{media.url}}</p>
+    </div>
+
+  </div>
+</div>

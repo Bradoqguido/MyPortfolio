@@ -1,0 +1,11 @@
+<mat-card style="text-align: center">
+  <h3>Skills</h3>
+  <div class="skillsContainer" *ngFor="let skill of skills">
+    <div class="skillContent">
+      <div>
+        <img [src]="skill.imgURL">
+      </div>
+      <p>{{skill.name}}</p>
+    </div>
+  </div>
+</mat-card>
