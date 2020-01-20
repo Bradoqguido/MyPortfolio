@@ -26,7 +26,7 @@ export class ProjectsComponent implements OnInit {
     { name: 'Hackathon Online Management App',
       imgURL: 'https://cdn.iconscout.com/icon/free/png-' + this.imgHeight + '/angular-3-226070.png',
       detailsParagraphs: [
-        'Hackathon Online management application for live and online events.',
+        'Hackathon Online management application for in-person and online events.',
         'Developed in angular with material design and firebase firestore.',
       ],
       url: 'https://hackathon-online.web.app'
