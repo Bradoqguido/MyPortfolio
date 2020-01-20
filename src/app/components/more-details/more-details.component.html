@@ -1,4 +1,15 @@
-<mat-list role="list">
-  <mat-list-item style="text-align: center"><h3>Hackathons/GameJam's</h3></mat-list-item>
-  <mat-list-item role="listitem" *ngFor="let hackathon of hackathons">{{hackathon.text}}</mat-list-item>
-</mat-list>
+<mat-card style="text-align: center">
+  <h3>Awards on events</h3>
+  <div class="detailsContainer" *ngFor="let award of eventsAwards">
+    <div class="skillContent">
+      <p>{{award.text}}</p>
+    </div>
+  </div>
+
+  <h3>Other events I attended</h3>
+  <div class="detailsContainer" *ngFor="let event of otherEvents">
+    <div class="skillContent">
+      <p>{{event.text}}</p>
+    </div>
+  </div>
+</mat-card>
