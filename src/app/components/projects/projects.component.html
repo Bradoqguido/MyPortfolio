@@ -4,8 +4,12 @@
 
     <div class="projectsContent">
 
+      <!-- H svg loaded from class-->
       <i *ngIf="project.url === 'https://hackathon-online.web.app'" class="fas fa-heading"></i>
+
+      <!-- Normal URL Images-->
       <img *ngIf="project.url !== 'https://hackathon-online.web.app'" [src]="project.imgURL">
+
       <div>
         <h4><p>{{project.name}}</p></h4>
         <div class="projectsContent" *ngFor="let p of project.detailsParagraphs">
