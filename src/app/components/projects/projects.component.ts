@@ -31,7 +31,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Pizzaria Management App',
-      imgURL: 'assets/img/pizza-48x48.png',
+      imgURL: 'assets/images/pizza-48x48.png',
       detailsParagraphs: [
         'Management application for Pizzarias with stock, grade, products, person access controls.',
         'Developed in angular with material design and firebase firestore.',
