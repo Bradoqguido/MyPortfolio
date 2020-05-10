@@ -2,14 +2,8 @@
   <h3>My Projects</h3>
   <div class="projectsContainer" *ngFor="let project of projects">
 
-    <div class="projectsContent">
-
-      <!-- H svg loaded from class-->
-      <i *ngIf="project.url === 'https://hackathon-online.web.app'" class="fas fa-heading"></i>
-
-      <!-- Normal URL Images-->
-      <img *ngIf="project.url !== 'https://hackathon-online.web.app'" [src]="project.imgURL">
-
+    <mat-card class="projectsContent">
+      <img [src]="project.imgURL">
       <div>
         <h4><p>{{project.name}}</p></h4>
         <div class="projectsContent" *ngFor="let p of project.detailsParagraphs">
@@ -18,8 +12,7 @@
       </div>
       <h4>Access here:</h4>
       <a mat-flat-button href="{{project.url}}" target="_blank">{{project.url}}</a>
-
-    </div>
+    </mat-card>
 
   </div>
 </mat-card>
